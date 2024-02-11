@@ -1,0 +1,158 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+picture{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative; 
+}
+
+picture::after{
+    content:'' ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: hsl(257, 40%, 49%);
+    opacity: 0.5;
+}
+
+.img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0;
+    
+}
+
+.header{
+    position: absolute;
+    display: flex;
+    vertical-align: top;
+    transform: translate(-50%, -50%);
+    top: 8%;
+    left: 20%;
+}
+
+.message_icon{
+    height: 50px;
+    width: 50px;
+    margin-right: 6px;
+}
+
+.logo{
+    margin: 0;
+    color: white;
+}
+
+button{
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 150px;
+    transition: 0.15s;
+    margin-left: 4px;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+i{
+    margin-right: 12px;
+    font-size: 160px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    height: 15px;
+    padding: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.15s;
+    color: white;
+}
+
+i:hover{
+    color: hsl(300, 69%, 71%);;
+    border-color: hsl(300, 69%, 71%);;
+}
+
+.dedication{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 95%;
+    left: 30%;
+    color: white;
+   
+}
+
+@media (max-width: 500px){
+    .header{
+        position: absolute;
+        display: flex;
+        vertical-align: top;
+        transform: translate(-50%, -50%);
+        top: 10%;
+        left: 30%;
+    }
+    .file{
+        position: absolute;
+        transform: translate(-40%, -40%);
+        top: 30%;
+        left: 40%;
+        color: white;
+        text-align: center;
+    }
+    .text{
+        position: absolute;
+        transform: translate(-40%, -40%);
+        top: 60%;
+        left: 40%;
+        color: white;
+        text-align: center;
+    }
+    .icons{
+        position: absolute;
+        transform: translate(-40%, -40%);
+        top: 92%;
+        left: 45%;
+    }
+}
+
+@media (min-width: 500px){
+    .content_body{
+        position: absolute;
+        transform: translate(-30%, -15%);
+        top: 25%;
+        left: 30%;
+        color: white;
+    }
+    .grid_css{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+    .icons{
+        position: absolute;
+        transform: translate(-30%, -50%);
+        top: 90%;
+        left: 80%;
+    }
+    .file{
+        height: 400px;
+        width: 100%; 
+    }
+    
+}
