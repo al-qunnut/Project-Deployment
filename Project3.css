@@ -92,7 +92,7 @@ i:hover{
 .dedication{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 95%;
+    top: 98%;
     left: 30%;
     color: white;
    
@@ -110,15 +110,17 @@ i:hover{
     .file{
         position: absolute;
         transform: translate(-40%, -40%);
-        top: 30%;
+        top: 25%;
         left: 40%;
         color: white;
         text-align: center;
+        width: 200px;
+        height: 200px;
     }
     .text{
         position: absolute;
         transform: translate(-40%, -40%);
-        top: 60%;
+        top: 55%;
         left: 40%;
         color: white;
         text-align: center;
@@ -126,9 +128,15 @@ i:hover{
     .icons{
         position: absolute;
         transform: translate(-40%, -40%);
-        top: 92%;
+        top: 90%;
         left: 45%;
     }
+    .dedication{
+        text-align: center;
+        font-size: 10px;
+        margin-left: 50px;
+    }
+
 }
 
 @media (min-width: 500px){
